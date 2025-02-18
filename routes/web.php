@@ -8,4 +8,4 @@ Route::get('/', function () {
 });
 
 Route::view('user-form', 'user-form');
-Route::match(['get', 'post'],'adduser', [UserController::class, 'addUser']);
+Route::post('adduser', [UserController::class, 'adduser']);
